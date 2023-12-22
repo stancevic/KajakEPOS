@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт</title>
+
+    <link rel="stylesheet" type="text/css" href="css/kontakt.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function potvrdaPoruke(){
+            alert("Послали сте поруку! Одговорићемо вам путем приложених података у најкраћем могућем року.");
+        }
+
+        function potvrdaSastanka(){
+            alert("Примили смо ваш жељени термин састанка! Обратићемо вам се у најкраћем року како бисмо потврдили састанак.");
+        }
+    </script>
+</head>
+<body>
+    <div class="glavni-sadrzaj">
+        <div class="h1-div">
+            <h1 id="">Имате питања?</h1>
+        </div>
+
+        <div class="parni-container">
+            <div class="mali-div">
+                <p id="pRecenica">Ту смо да одговоримо на сва ваша питања! Путем приложених форми, можете нас контактирати, или заказати састанак са нама у просторијама Кајакашког савеза Србије.</p>
+            </div>
+            <div class="mali-div div-mapa">
+                <div id="mapInfo">
+                    <p><strong>Кајакашки савез Србије</strong></p>
+                    <p><i class="fa fa-home"></i> Ада Циганлија 10, Београд 11000</p>
+                    <p><i class="fa fa-phone"></i> 011/000 111</p>
+                    <p><i class="fa fa-envelope"></i> info@kayakserbia.rs</p>
+                    <p><i class="fa fa-globe"></i> kajaksrbija.rs</p>
+                </div>
+                <iframe id = "mapaFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.572868686567!2d20.40809247670289!3d44.78951257820069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6fb242fbffff%3A0x42f9a68687ad2230!2sCanoe%20Federation%20of%20Serbia!5e0!3m2!1ssr!2srs!4v1702935907929!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="parni-container">
+            <div class="div-forma mali-div">
+                <div class="prostor"></div>
+
+                <form action="" id="formaPoruka">
+                    <h2>Пошаљите нам поруку</h2>
+                    <!--<label for="ime">Име и презиме: </label>-->
+                    <input type="text" name="ime" id="" placeholder="Име и презиме" size="30">
+                    <!--<br>-->
+                    <!--<label for="email">E-mail: </label>-->
+                    <input type="email" name="email" id="" placeholder="E-mail" size="30">
+                    <!--<br>-->
+                    <!--<label for="telefon">Број телефона: </label>-->
+                    <input type="tel" name="telefon" id="" placeholder="Број телефона" size="30">
+                    <!--<br>-->
+                    <!--<label for="poruka">Ваша порука: </label> <br>-->
+                    <textarea name="poruka" id="" cols="30" rows="15" placeholder="Упишите овде вашу поруку"></textarea>
+                    <input type="submit" value="Потврди" onclick="potvrdaPoruke()">
+                </form>
+
+                <div class="prostor"></div>
+            </div> 
+
+            <div class="div-forma mali-div">
+                <div class="prostor"></div>
+
+                <form action="" id="formaSastanak">
+                    <h2>Закажите састанак<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp са нама</h2>
+                    <input type="text" class="sastanakInput" name="" id="" placeholder="Име и презиме" size="30">
+                    <input type="email" class="sastanakInput" name="" id="" placeholder="E-mail" size="30">
+                    <input type="tel" class="sastanakInput" name="" id="" placeholder="Број телефона" size="30">
+                    <label for="datumIzbor" style="color: white;">Изаберите жељени датум састанка</label>
+                    <input type="date" name="datumIzbor" id="datumIzbor" size="30">
+                    <input type="submit" value="Потврди" onclick="potvrdaSastanka()">
+                </form>
+
+                <div class="prostor"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

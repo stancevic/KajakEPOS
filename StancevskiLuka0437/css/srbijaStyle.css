@@ -1,0 +1,115 @@
+*{
+    font-family: helvetica;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    background-color: #2E8A99;
+}
+
+.veliki-container{
+    background-color: #2E8A99;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .navigacija{
+        margin: 0.4em;
+        padding: 0%;
+
+        font-size: 2em;
+        
+        display: flex;
+    }
+
+        @media (max-width: 450px) {
+            .navigacija {
+                flex-direction: column;
+            }
+        }
+    
+        .dugme-stranica{
+            flex: 1;
+
+            background-color: #C6363C;
+            
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .dugme-stranica:hover{
+            flex: 1;
+
+            background: rgb(198,54,60);
+            background: linear-gradient(180deg, rgba(198,54,60,1) 0%, rgba(12,64,118,1) 50%, rgba(255,255,255,0) 100%);
+
+            
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+        /*
+        C6363C
+        0C4076*/
+
+        .dugme-stranica:active{
+            flex: 1;
+
+            /*background-color: #0C4076;*/
+
+            background: rgb(198,54,60);
+            background: linear-gradient(180deg, rgba(198,54,60,1) 0%, rgba(12,64,118,1) 50%, rgba(255,255,255,0) 100%);
+            
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }/*rgba(255,255,255,0)*/
+
+    .glavni-sadrzaj{
+        background: rgb(198,54,60);
+        background: linear-gradient(141deg, rgba(198,54,60,1) 0%, rgba(12,64,118,1) 50%, rgb(255,255,255) 100%);
+        border-radius: 1% 10% 1% 1%;
+
+        margin: 0.4em;
+        padding: 20px;
+
+        font-size: 30px;
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+        .divOlimpijci{
+            align-self: center;
+        }
+
+        #imgOlimpijci{
+            width: 768px;
+            height: 441.75px;
+        }
+
+        @media (min-width: 600px) and (max-width: 800px) {
+            #imgOlimpijci{
+                width: 512px;
+                height: 294.5px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #imgOlimpijci{
+                width: 256px;
+                height: 147.25px;
+            }
+        }
+
+    footer{
+        flex: 1;
+        align-self: center;
+
+        color: white;
+    } 

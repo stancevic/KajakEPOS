@@ -1,0 +1,131 @@
+*{
+    font-family: helvetica;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    background-color: #2E8A99;
+}
+
+.glavni-sadrzaj{
+    /*background-color: #2E8A99;*/
+
+    background: rgb(14,41,84);
+    background: linear-gradient(131deg, rgba(14,41,84,1) 0%, rgba(255,255,255,0) 77%);
+    border-radius: 1% 10% 1% 1%;
+
+    padding: 1%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .h1-div{
+        
+    }
+
+    .parni-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+        .mali-div{
+            flex: 1;
+
+            display: flex;
+            
+        }
+
+            #mapaFrame{
+                flex: 2;
+
+                /*margin: auto;*/
+            }
+
+            #mapInfo{
+                flex: 1;
+                background-color: #2E8A99;
+
+                padding-left: 1%;
+            }
+
+            p, h1{
+                color: white;
+            }
+
+            #pRecenica{
+                font-size: 30px;
+                text-align: justify;
+                margin: 0.8em;
+            }
+
+                .prostor{
+                    flex: 1;
+                }
+
+                #formaPoruka{
+                    flex: 1;
+
+                    display: flex;
+                    margin-top: 2%;
+
+                    flex-direction: column;
+                    align-items: center;
+
+                    border: 1px solid white;
+                }
+
+                    #formaPoruka input{
+                        margin: 2%;
+                    }
+
+                    #formaPoruka textarea{
+                        margin-top: 2%;
+                        margin-bottom: 2%;
+
+                        resize: vertical;
+                    }
+
+                #formaSastanak{
+                    flex: 1;
+
+                    display: flex;
+                    margin-top: 2%;
+
+                    flex-direction: column;
+                    align-items: center;
+
+                    border: 1px solid white;
+                }
+
+                    .sastanakInput{
+                        margin: 2%;
+                    }
+
+                    #datumIzbor{
+                        margin: 1% 2% 2% 2%;
+                    }
+
+                    
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+@media (max-width: 450px) {
+    .parni-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe{
+        width: 150px;
+        height: 250px;
+    }
+}
