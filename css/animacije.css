@@ -19,7 +19,7 @@
 #h1KajakIndex{
     animation-name: indexKajak;
     animation-duration: 4s;
-    animation-fill-mode: forwards;
+    /*animation-fill-mode: forwards;*/
 }
 
 /**/
