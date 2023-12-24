@@ -3,42 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кајак и кану</title>
+    <title>Кајак и кану у Србији</title>
 
-    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/srbijaStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/animacije.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/menu.js" defer></script>
 </head>
 <body>
     <div class="veliki-container">
-        <nav class="navigacija">
-           
-            
-            <a href="#" class="dugme-stranica">Почетна</a>
-            <a href="srbija.html" class="dugme-stranica">Кајак у Србији</a>
-            <a href="olimpijskeIgre.html" class="dugme-stranica">Кајак на Олимпијским играма</a>
-            <a href="kontakt.html" class="dugme-stranica">Контакт</a>
-            
-            
-        </nav>
+
+        <header>
+            <nav class="navigacija">
+                <div class="navigacija-naslov">Кајак</div>
+                <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </a>
+                <div class="navigacija-linkovi">
+                <ul>
+                    <li><a href="index.html">Почетна</a></li>
+                    <li><a href="#">Кајак у Србији</a></li>
+                    <li><a href="olimpijskeIgre.html">Кајак на Олимпијским играма</a></li>
+                    <li><a href="kontakt.html">Контакт</a></li>
+                    <span id="prostor">&nbsp;&nbsp;&nbsp;</span>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
         <div class="glavni-sadrzaj">
-            <div class="h1-kajak">
-                <h1>Кајак</h1>
+
+            <div class="h1div">
+                <h1 id="h1Kajaksrb">Кајак у Србији</h1>
             </div>
 
-            <div class="kajak-tekst">
-                <p>Кајак и кану на мирним водама је борба брзине, снаге и издржљивости, где се спортисти такмиче раме уз раме на водама које не теку.
-                    Две врсте чамаца које се срећу су кајак, чамац у којем се седи, и кану, где такмичар клечи. Код обе врсте чамаца, такмичари се
-                    могу такмичити појединачно, у једноседу, односно једноклеку, као и групно, у двоседимо и четвороседима код кајакаша, и у двоклецима
-                    и четвороклецима код кануиста.
-                    Тркају се на стазама дужине 200, 500 или 1 000 метара, као и на дугачким дисциплинама од 5 000 метара или маратон од преко 20 0000 метара.
-                    Од 1936. године, кајак и кану на мирним водама је олимпијски спорт.
+            <div class="divSrbijaTekst">
+                <p>
+                    Кајакашки савез Југославије основан је 1936. године.
+                    Кајак и кану се у Србији са разлогом сматра трофејним спортом. Кајакаши из Србије до сада су освојили преко 150 медаља на највећим светским и европским такмичењима.
+                Само на олимпијским играма, три златне и три сребрне медаље.
+                    Олимпијском медаљом, српски кајакаши су обрадовали народ 2016. године, када су Миленко Зорић и Марко Томићевић у Рију били сребрни у дисциплини кајак двосед на 1 000 метара. 
                 </p>
             </div>
-        
-            <div class="video1-div">
-                <iframe id="video1" width="860" height="540" src="https://www.youtube.com/embed/dj750jPlnY0?si=-QhVHghnO7w4vW-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <div class = "divOlimpijciSlika">
+                <a href="https://www.youtube.com/watch?v=kmyflGoekD0" target="_blank"><img id ="imgOlimpijci" src="img/zoricTomicevic.jpg" alt="" title="Кликни слику да би погледао трку"></a>
             </div>
+
         </div>
 
         <footer>

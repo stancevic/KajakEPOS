@@ -3,6 +3,8 @@ footer{
     display: flex;
     flex-direction: row;
 
+    font-size: 18px;
+
     background: rgb(14,41,84);
     background: linear-gradient(90deg, rgba(14,41,84,1) 0%, rgba(46,138,153,1) 50%, rgba(14,41,84,1) 100%);
 }

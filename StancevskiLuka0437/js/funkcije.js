@@ -1,3 +1,0 @@
-function potvrdaPoruke(){
-    alert("poslato");
-}

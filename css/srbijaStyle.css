@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+/*
     .navigacija{
         margin: 0.4em;
         padding: 0%;
@@ -45,21 +45,19 @@ body{
             flex: 1;
 
             background: rgb(198,54,60);
-            background: linear-gradient(180deg, rgba(198,54,60,1) 0%, rgba(12,64,118,1) 50%, rgba(255,255,255,0) 100%);
+            background: linear-gradient(180deg, rgba(198,54,60,1) 0%, rgba(12,64,118,1) 50%, rgb(255,255,255) 100%);
 
             
             color: white;
             text-decoration: none;
             text-align: center;
         }
-        /*
-        C6363C
-        0C4076*/
+        
 
         .dugme-stranica:active{
             flex: 1;
 
-            /*background-color: #0C4076;*/
+            
 
             background: rgb(198,54,60);
             background: linear-gradient(180deg, rgba(198,54,60,1) 0%, rgba(12,64,118,1) 50%, rgba(255,255,255,0) 100%);
@@ -74,8 +72,9 @@ body{
         background: linear-gradient(141deg, rgba(198,54,60,1) 0%, rgba(12,64,118,1) 50%, rgb(255,255,255) 100%);
         border-radius: 1% 10% 1% 1%;
 
-        margin: 0.4em;
-        padding: 20px;
+        margin: 0 0.4em 0.4em 0.4em;
+        padding-left: 0.8em;
+        padding-right: 0.8em;
 
         font-size: 30px;
         color: white;
@@ -83,8 +82,21 @@ body{
         display: flex;
         flex-direction: column;
     }
+        .h1div{
+            flex: 1;
+            align-self: center;
+            /*text-align: justify;*/
+        }
 
-        .divOlimpijci{
+        .divSrbijaTekst{
+            flex: 1;
+            /*align-self: center;
+            margin: 0.4em;*/
+            text-align: justify;
+        }
+
+        .divOlimpijciSlika{
+            flex: 1;
             align-self: center;
         }
 
@@ -107,9 +119,8 @@ body{
             }
         }
 
-    footer{
-        flex: 1;
-        align-self: center;
-
-        color: white;
-    } 
+        @media (max-width: 450px) {
+            .glavni-sadrzaj{
+                font-size: 24px;
+            }
+        }
