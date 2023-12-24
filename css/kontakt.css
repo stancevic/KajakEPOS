@@ -123,7 +123,7 @@ body{
                         }
 
                             #formaSastanak label{
-                                
+                                /**/
                             }
 
                             #videoSastanakLabel{
@@ -150,9 +150,14 @@ h2{
         flex-direction: column;
     }
 
+    .div-mapa{
+        display: flex;
+        flex-direction: column;
+    }
+
     iframe{
-        width: 150px;
-        height: 250px;
+        width: 250px;
+        height: 150px;
     }
 }
 
@@ -162,8 +167,25 @@ h2{
         flex-direction: column;
     }
 
+    .div-mapa{
+        display: flex;
+        flex-direction: column;
+    }
+
     iframe{
-        width: 150px;
-        height: 350px;
+        height: 150px;
+        width: 350px;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1200px) {
+    .parni-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe{
+        width: 700px;
+        height: 300px;
     }
 }

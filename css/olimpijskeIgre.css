@@ -102,13 +102,25 @@ body{
                     }
                 }
 
-                @media (min-width: 700px) and (max-width: 1000px) {
+                @media (min-width: 701px) and (max-width: 1000px) {
                     article {
                         flex-direction: column;
 
                         font-size: 18px;
                     }
 
+                    #kajak1936{
+                        width: 400px;
+                        height: 266.67px;
+                    }
+
+                    #kockoImg{
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+
+                @media (min-width: 1001px) and (max-width: 1200px) {
                     #kajak1936{
                         width: 400px;
                         height: 266.67px;
